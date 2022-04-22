@@ -35,7 +35,11 @@ const index = () => {
 
         <section
           id="about"
-          className="min-h-screen bg-zinc-900 px-32 flex items-center justify-between"
+          className="
+          relative min-h-screen bg-zinc-900 px-32 flex items-center justify-between
+          before:content-[''] before:absolute top-0 left-0 before:bg-[url('../images/css-logo.svg')]
+          bg-no-repeat
+          "
         >
           <div className="w-2/4">
             <div className="mb-5">
@@ -66,6 +70,8 @@ const index = () => {
               <Icons icon={faHtml5} className="text-html5" />
               <Icons icon={faCss3} className="text-css" />
             </div>
+
+            <div></div>
           </div>
           <div className="">
             <StaticImage src="../images/portfolio-image.png" />
