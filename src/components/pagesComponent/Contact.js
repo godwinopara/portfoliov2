@@ -1,4 +1,5 @@
 import * as React from "react";
+import Button from "../Button";
 import FormInput from "../FormInput";
 
 const Contact = () => {
@@ -33,6 +34,15 @@ const Contact = () => {
               className="w-full bg-transparent border-b outline-none text-zinc-400 font-light text-sm"
             ></textarea>
           </div>
+        </div>
+        <div className="grid place-items-center mt-10">
+          {/* <button className="bg-light-blue-2 text-white px-20 py-3 text-center text-sm tracking-widest rounded">
+            SEND MESSAGE
+          </button> */}
+          <Button text="SEND MESSAGE" className="text-sm tracking-widest w-60" />
+          {/* <button className="btn">
+            <div className="btn-text">SEND MESSAGE</div>
+          </button> */}
         </div>
       </form>
     </section>

@@ -25,8 +25,8 @@ const index = () => {
               crafting exceptional and entertaining digital experience.
             </p>
             <div className="mt-10">
-              <Button text="Contact" />
-              <Button text="Resume" />
+              <Button text="Contact Me" className="btn-dark" />
+              <Button text="Resume" className="btn-dark" />
             </div>
           </div>
           <div className="hero-image">

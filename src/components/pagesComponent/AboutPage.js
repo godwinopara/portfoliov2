@@ -33,7 +33,7 @@ const AboutPage = () => {
         </p>
 
         <div className="mt-5">
-          <Button text="Contact" />
+          <Button text="Contact Me" />
           <Button text="Resume" />
         </div>
 
