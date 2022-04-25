@@ -18,7 +18,7 @@ const AboutPage = () => {
       <div className="w-2/4">
         <div className="mb-5">
           <h2 className="text-white text-4xl font-bold tracking-widest+ ">About Me.</h2>
-          <span className="text-yellow-plum">Interactive Front-End Developer</span>
+          <Span text="Interactive Front-End Developer" />
         </div>
 
         <p className="text-white mb-5">
@@ -33,8 +33,8 @@ const AboutPage = () => {
         </p>
 
         <div className="mt-5">
-          <Button text="Contact" className="border border-white" />
-          <Button text="Resume" className="border border-white" />
+          <Button text="Contact" />
+          <Button text="Resume" />
         </div>
 
         <div className="mt-8">

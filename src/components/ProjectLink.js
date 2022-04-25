@@ -4,10 +4,10 @@ const ProjectLink = ({ href, image, text }) => {
   return (
     <a
       href={href}
-      className="bg-zinc-900 inline-flex items-center text-white text-center px-6 py-2 mr-8 mt-10 text-lg"
+      className="bg-white inline-flex items-center rounded-sm text-zinc-900 text-center px-6 py-2 mr-8 mt-3 text-sm"
     >
       {text}
-      <img src={image} alt="" className="w-4 max-w-full ml-2" />
+      <img src={image} alt="project link images" className="w-3 mb-1 max-w-full ml-2" />
     </a>
   );
 };
