@@ -1,50 +1,18 @@
 import * as React from "react";
-import Button from "../Button";
-import FormInput from "../FormInput";
+import ContactForm from "../ContactForm";
+import Social from "../Social";
 
 const Contact = () => {
   return (
-    <section className="px-40 py-10 bg-zinc-900">
-      <div className="grid place-items-center">
-        <h1 className="font-bold text-4xl py-5 text-light-blue-1">Send me a message!</h1>
-        <p className="w-2/5 text-center text-xl pb-20 text-zinc-200">
-          Got a question or proposal, or just want to say hello? Go ahead.
+    <section className="px-40 py-10 bg-zinc-900 grid grid-cols-2" id="contact">
+      <div>
+        <h1 className="font-bold text-6xl py-5 text-light-blue-1">Let Work together!</h1>
+        <p className="w-3/4 pb-8 text-zinc-300 text-lg">
+          Got a question or proposal, or just want to say hello or even a coffee? Go ahead.
         </p>
+        <Social />
       </div>
-      <form className="w-3/4 mx-auto">
-        <div className="grid grid-cols-2 gap-x-10 mb-5">
-          <FormInput type="text" name="name" placeholder="Enter your name" label="Your Name" />
-          <FormInput
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-            label="Email Address"
-          />
-
-          <div className="col-span-2 mt-10">
-            <label htmlFor="message" className="text-light-blue-1 block mb-1">
-              Your Message
-            </label>
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              rows="3"
-              placeholder="Hi Godwin, I’m reaching out to see if you’d be interested in a job opportunity. Please let me know if you are available to discuss."
-              className="w-full bg-transparent border-b outline-none text-zinc-400 font-light text-sm"
-            ></textarea>
-          </div>
-        </div>
-        <div className="grid place-items-center mt-10">
-          {/* <button className="bg-light-blue-2 text-white px-20 py-3 text-center text-sm tracking-widest rounded">
-            SEND MESSAGE
-          </button> */}
-          <Button text="SEND MESSAGE" className="text-sm tracking-widest w-60" />
-          {/* <button className="btn">
-            <div className="btn-text">SEND MESSAGE</div>
-          </button> */}
-        </div>
-      </form>
+      <ContactForm />
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import AboutPage from "../components/pagesComponent/AboutPage";
 import Contact from "../components/pagesComponent/Contact";
@@ -10,7 +11,7 @@ import Span from "../components/Span";
 const index = () => {
   return (
     <>
-      <header className="py-5 px-10">
+      <header className="py-5 px-10" id="header">
         <NavBar />
       </header>
       <main>
@@ -40,13 +41,15 @@ const index = () => {
 
         {/* PORTFOLIO SECTION */}
         <Portfolio />
-
         {/* END PORTFOLIO SECTION */}
 
         {/* CONTACT SECTION */}
-        <section id="contact"></section>
         <Contact />
         {/* END CONTACT SECTION */}
+
+        {/* FOOTER SECTION */}
+        <Footer />
+        {/* END FOOTER SECTION */}
       </main>
     </>
   );
