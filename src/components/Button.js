@@ -1,10 +1,12 @@
 import * as React from "react";
 
-const Button = ({ text, className }) => {
+const Button = ({ text, className, href }) => {
   return (
-    <button className={`btn ${className}`}>
-      <div className="btn-text">{text}</div>
-    </button>
+    <a href={href}>
+      <button className={`btn ${className}`}>
+        <div className="btn-text">{text}</div>
+      </button>
+    </a>
   );
 };
 

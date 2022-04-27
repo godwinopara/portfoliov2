@@ -5,10 +5,26 @@ import { faInstagram, faTwitter, faGithub, faLinkedin } from "@fortawesome/free-
 const Social = () => {
   return (
     <div>
-      <SocialLink icon={faInstagram} href="https://www.instagram.com/godwin_ahamefula/" />
-      <SocialLink icon={faTwitter} href="https://www.twitter.com/godwinopara12" />
-      <SocialLink icon={faGithub} href="https://www.github.com/godwinopara" />
-      <SocialLink icon={faLinkedin} href="https://www.linkedin/in/godwinopara" />
+      <SocialLink
+        icon={faInstagram}
+        href="https://www.instagram.com/godwin_ahamefula/"
+        className="hover:text-red-500"
+      />
+      <SocialLink
+        icon={faTwitter}
+        href="https://www.twitter.com/godwinopara12"
+        className="hover:text-sky-500"
+      />
+      <SocialLink
+        icon={faGithub}
+        href="https://www.github.com/godwinopara"
+        className="hover:text-black"
+      />
+      <SocialLink
+        icon={faLinkedin}
+        href="https://www.linkedin/in/godwinopara"
+        className="hover:text-blue-700"
+      />
     </div>
   );
 };

@@ -26,8 +26,12 @@ const index = () => {
               crafting exceptional and entertaining digital experience.
             </p>
             <div className="mt-10">
-              <Button text="Contact Me" className="btn-dark" />
-              <Button text="Resume" className="btn-dark" />
+              <Button text="Contact Me" className="btn-dark" href="#contact" />
+              <Button
+                text="Resume"
+                className="btn-dark"
+                href="https://drive.google.com/file/d/1wB0s1jC0PID8ZTTQ6sFAW9ytZa9QO0OL/view?usp=sharing"
+              />
             </div>
           </div>
           <div className="hero-image">

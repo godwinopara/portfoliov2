@@ -4,7 +4,7 @@ import Social from "../Social";
 
 const Contact = () => {
   return (
-    <section className="px-40 py-10 bg-zinc-900 grid grid-cols-2" id="contact">
+    <section className="px-32 py-20 bg-zinc-900 grid grid-cols-2" id="contact">
       <div>
         <h1 className="font-bold text-6xl py-5 text-light-blue-1">Let Work together!</h1>
         <p className="w-3/4 pb-8 text-zinc-300 text-lg">

@@ -11,6 +11,8 @@ const Portfolio = () => {
           text="This project required me to build a 7 pages website to the design provided"
           image={<StaticImage src="../../images/fuji.jpg" height={400} className="rounded-lg" />}
           techstacks={["React", "Gatsby", "MDX markdown", "Styled Components"]}
+          demoLink="https://designo-site.netlify.app/"
+          githubLink="https://github.com/godwinopara/designo-site"
         />
         <ProjectDetails
           heading="Audiophille"
@@ -19,6 +21,8 @@ const Portfolio = () => {
           image={<StaticImage src="../../images/lamp.jpg" height={400} className="rounded-lg" />}
           className="flex-row-reverse"
           techstacks={["React", "Formik", "Yup", "TailwindCSS"]}
+          demoLink="https://audiophile-e-commerce.netlify.app/"
+          githubLink="https://github.com/godwinopara/audiophille-ecommerce"
         />
         <ProjectDetails
           heading="Dev Finder"
@@ -26,6 +30,8 @@ const Portfolio = () => {
           view their personal website and their github details."
           image={<StaticImage src="../../images/fuji.jpg" height={400} className="rounded-lg" />}
           techstacks={["React", "Axios", "SASS"]}
+          demoLink="https://findgithubdev.netlify.app/"
+          githubLink="https://github.com/godwinopara/devFinder"
         />
         <ProjectDetails
           heading="Starbuck"
@@ -33,6 +39,8 @@ const Portfolio = () => {
           image={<StaticImage src="../../images/lamp.jpg" height={400} className="rounded-lg" />}
           className="flex-row-reverse"
           techstacks={["React", "Sass"]}
+          demoLink="https://starbuck-clone.netlify.app/"
+          githubLink="https://github.com/godwinopara/starbuck-clone"
         />
       </div>
     </section>

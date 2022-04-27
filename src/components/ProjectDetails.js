@@ -5,7 +5,7 @@ import ProjectLink from "./ProjectLink";
 import ListText from "./ListText";
 
 const ProjectDetails = (props) => {
-  const { heading, text, image, className, techstacks } = props;
+  const { heading, text, image, className, techstacks, demoLink, githubLink } = props;
   return (
     <div
       className={`flex items-center justify-between rounded-xl shadow-md p-10  mb-36 bg-zinc-900 ${className}`}
@@ -15,8 +15,8 @@ const ProjectDetails = (props) => {
         <p>{text}</p>
         <ListText textLists={techstacks} />
         <div>
-          <ProjectLink href="#" image={ArrowLink} text="Visit" />
-          <ProjectLink href="#" image={GithubLink} text="Github" />
+          <ProjectLink href={demoLink} image={ArrowLink} text="Visit" />
+          <ProjectLink href={githubLink} image={GithubLink} text="Github" />
         </div>
       </div>
 

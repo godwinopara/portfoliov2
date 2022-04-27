@@ -4,6 +4,8 @@ const ProjectLink = ({ href, image, text }) => {
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noreferrer"
       className="bg-white inline-flex items-center rounded-sm text-zinc-900 text-center px-6 py-2 mr-8 mt-3 text-sm"
     >
       {text}
