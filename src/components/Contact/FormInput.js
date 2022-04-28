@@ -11,7 +11,7 @@ const FormInput = ({ type, name, placeholder, label }) => {
         name={name}
         id={name}
         placeholder={placeholder}
-        className="block py-2 w-full bg-transparent border-b font-light text-sm outline-none text-zinc-400 focus:border-light-blue-1"
+        className="block mb-12 py-2 w-full bg-transparent border-b font-light text-sm outline-none text-zinc-400 focus:border-light-blue-1"
       />
     </div>
   );

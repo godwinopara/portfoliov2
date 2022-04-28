@@ -6,7 +6,7 @@ import Button from "../Shared/Button";
 const ContactForm = () => {
   return (
     <form>
-      <div className="grid grid-cols-2 gap-x-10 mb-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 mb-5">
         <FormInput type="text" name="name" placeholder="Enter your name" label="Your Name" />
         <FormInput
           type="email"

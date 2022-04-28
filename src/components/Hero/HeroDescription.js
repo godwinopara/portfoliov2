@@ -7,7 +7,7 @@ import HeroBtn from "./HeroBtn";
 
 const HeroDescription = () => {
   return (
-    <div>
+    <div className="md:w-3/4">
       <Span text="Hello world, my name is" />
       <Heading />
       <Heading2 />

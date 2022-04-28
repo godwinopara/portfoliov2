@@ -2,7 +2,7 @@ import * as React from "react";
 
 const FormTextArea = () => {
   return (
-    <div className="col-span-2 mt-10">
+    <div className="lg:col-span-2 lg:mt-10">
       <label htmlFor="message" className="text-light-blue-1 block mb-1">
         Your Message
       </label>
@@ -19,3 +19,4 @@ const FormTextArea = () => {
 };
 
 export default FormTextArea;
+

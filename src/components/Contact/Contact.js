@@ -6,8 +6,11 @@ import Social from "../Shared/Social";
 
 const Contact = () => {
   return (
-    <section className="xl:px-32 py-20 bg-zinc-900 xl:grid xl:grid-cols-2" id="contact">
-      <div>
+    <section
+      className=" py-20 px-4 bg-zinc-900 lg:grid lg:grid-cols-2 lg:px-10 xl:px-32"
+      id="contact"
+    >
+      <div className="mb-20 grid place-items-center">
         <ContactHeading />
         <ContactDescription />
         <Social />
