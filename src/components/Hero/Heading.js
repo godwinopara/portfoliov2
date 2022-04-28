@@ -4,8 +4,8 @@ const Heading = () => {
   return (
     <h1
       className="
-  text-4xl tracking-wider font-bold mt-8
-  xl:text-6xl
+  text-4xl tracking-wider font-bold mt-8 mb-3
+  xl:text-6xl xl:mb-0
   "
     >
       Godwin Opara

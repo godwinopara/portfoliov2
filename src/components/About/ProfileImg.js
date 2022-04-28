@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const ProfileImg = () => {
   return (
-    <div>
+    <div className="md:text-center">
       <StaticImage src="../../images/portfolio-image.png" />
     </div>
   );
