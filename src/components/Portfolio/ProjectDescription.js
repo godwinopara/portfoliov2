@@ -7,7 +7,7 @@ import GithubLink from "../../images/github-brands.svg";
 
 const ProjectDescription = ({ text, heading, demoLink, githubLink, techstacks }) => {
   return (
-    <div className="w-2/4 text-white">
+    <div className="grid place-items-center xl:w-2/4 text-white">
       <ProjectHeading heading={heading} />
       <p>{text}</p>
 

@@ -4,8 +4,8 @@ import ProjectDetails from "./ProjectDetails";
 
 const Portfolio = () => {
   return (
-    <section className="px-32 pt-32 min-h-screen bg-white" id="projects">
-      <div className="px-8">
+    <section className="xl:px-32 pt-32 min-h-screen bg-white" id="projects">
+      <div className="xl:px-8">
         <ProjectDetails
           heading="Designo"
           text="This project required me to build a 7 pages website to the design provided"

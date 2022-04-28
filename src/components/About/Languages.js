@@ -4,7 +4,7 @@ import { faReact, faJs, faHtml5, faCss3, faPython } from "@fortawesome/free-bran
 
 const Languages = () => {
   return (
-    <div className="mt-8">
+    <div className="mb-10 mt-8 lg:mb-0">
       <Icons icon={faPython} className="text-python" />
       <Icons icon={faJs} className="text-javascript" />
       <Icons icon={faReact} className="text-react" />
