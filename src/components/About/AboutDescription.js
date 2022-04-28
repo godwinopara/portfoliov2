@@ -6,7 +6,7 @@ import Languages from "./Languages";
 
 const AboutDescription = () => {
   return (
-    <div className="xl:w-2/4">
+    <div className="lg:w-2/4">
       <AboutHeading />
       <AboutText />
       <AboutBtn />
