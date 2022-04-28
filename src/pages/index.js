@@ -9,7 +9,7 @@ import Hero from "../components/Hero/Hero";
 const index = () => {
   return (
     <>
-      <header className="py-5 px-10" id="header">
+      <header className="px-4 py-5 xl:px-10" id="header">
         <NavBar />
       </header>
       <main>

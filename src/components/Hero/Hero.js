@@ -4,7 +4,7 @@ import HeroImg from "./HeroImg";
 
 const Hero = () => {
   return (
-    <section className="hero flex justify-between items-center px-32 py-10">
+    <section className="px-4 py-5 xl:flex xl:justify-between xl:items-center xl:px-32 xl:py-10">
       <HeroDescription />
       <HeroImg />
     </section>

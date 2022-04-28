@@ -1,18 +1,18 @@
-import { Link } from "gatsby";
 import * as React from "react";
+import { Link } from "gatsby";
 import Social from "../Shared/Social";
 
 const Footer = () => {
   return (
     <section
       className="
-    bg-light-blue-2 text-zinc-900 text-center grid place-items-center
-    xl:flex jxl:ustify-between xl:items-center xl:px-32 py-10"
+    bg-light-blue-2 text-zinc-900 text-center grid place-items-center py-10
+    xl:flex xl:justify-between xl:items-center xl:px-32"
     >
-      <div className="logo mb-3">
+      <div className="sm:mb-3 xl:mb-0">
         <Link to="#header">Godwin Opara</Link>
       </div>
-      <div className="mb-5 xl:flex ">
+      <div className="sm:mb-5 xl:flex xl:mb-0">
         <p>&copy; {new Date().getFullYear()}</p>
         <p className="ml-5">Design and built by Godwin Opara</p>
       </div>

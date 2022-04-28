@@ -3,11 +3,11 @@ import * as React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between">
+    <nav className="lg:flex lg:justify-between">
       <a className="font-bold tracking-widest text-zinc-700" href="/">
         GODWIN
       </a>
-      <ul className="flex">
+      <ul className="hidden xl:flex">
         <Li text="ABOUT" link="#about" />
         <Li text="PROJECTS" link="#projects" />
         <Li text="CONTACT" link="#contact" />
