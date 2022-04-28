@@ -1,11 +1,11 @@
 import * as React from "react";
 import FormInput from "./FormInput";
 import FormTextArea from "./FormTextArea";
-import Button from "./Button";
+import Button from "../Shared/Button";
 
 const ContactForm = () => {
   return (
-    <form className="">
+    <form>
       <div className="grid grid-cols-2 gap-x-10 mb-5">
         <FormInput type="text" name="name" placeholder="Enter your name" label="Your Name" />
         <FormInput

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Icons from "./Icons";
 
 const SocialLink = ({ href, icon, className }) => {

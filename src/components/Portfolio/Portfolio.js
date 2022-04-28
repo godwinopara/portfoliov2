@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import ProjectDetails from "../ProjectDetails";
+import ProjectDetails from "./ProjectDetails";
 
 const Portfolio = () => {
   return (

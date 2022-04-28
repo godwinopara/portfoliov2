@@ -1,12 +1,10 @@
-import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import AboutPage from "../components/pagesComponent/AboutPage";
-import Contact from "../components/pagesComponent/Contact";
-import Portfolio from "../components/pagesComponent/Portfolio";
-import Span from "../components/Span";
+import NavBar from "../components/Shared/NavBar";
+import Footer from "../components/Footer/Footer";
+import Contact from "../components/Contact/Contact";
+import About from "../components/About/About";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Hero from "../components/Hero/Hero";
 
 const index = () => {
   return (
@@ -15,45 +13,11 @@ const index = () => {
         <NavBar />
       </header>
       <main>
-        <section className="hero flex justify-between items-center px-32 py-10">
-          <div className="hero-description">
-            <Span text="Hello world, my name is" />
-            <h1 className="text-6xl tracking-wider font-bold mt-8">Godwin Opara</h1>
-            <h2 className="text-4xl font-bold mb-10">I build things for the web.</h2>
-            <p className="text-zinc-600">
-              I'm a <Span text="Front end developer" /> with a passion for
-              <br />
-              crafting exceptional and entertaining digital experience.
-            </p>
-            <div className="mt-10">
-              <Button text="Contact Me" className="btn-dark" href="#contact" />
-              <Button
-                text="Resume"
-                className="btn-dark"
-                href="https://drive.google.com/file/d/1wB0s1jC0PID8ZTTQ6sFAW9ytZa9QO0OL/view?usp=sharing"
-              />
-            </div>
-          </div>
-          <div className="hero-image">
-            <StaticImage alt="hero design image" src="../images/image-hero.png" width={350} />
-          </div>
-        </section>
-
-        {/* ABOUT Section */}
-        <AboutPage />
-        {/* End ABOUT Section */}
-
-        {/* PORTFOLIO SECTION */}
+        <Hero />
+        <About />
         <Portfolio />
-        {/* END PORTFOLIO SECTION */}
-
-        {/* CONTACT SECTION */}
         <Contact />
-        {/* END CONTACT SECTION */}
-
-        {/* FOOTER SECTION */}
         <Footer />
-        {/* END FOOTER SECTION */}
       </main>
     </>
   );
