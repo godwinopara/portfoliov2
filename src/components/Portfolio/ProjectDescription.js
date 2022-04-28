@@ -7,9 +7,9 @@ import GithubLink from "../../images/github-brands.svg";
 
 const ProjectDescription = ({ text, heading, demoLink, githubLink, techstacks }) => {
   return (
-    <div className="grid place-items-center xl:place-items-start xl:w-2/4 text-white">
+    <div className="grid place-items-center lg:place-items-start lg:w-2/4 text-white">
       <ProjectHeading heading={heading} />
-      <p className="text-center md:w-3/5 xl:text-left">{text}</p>
+      <p className="text-center md:w-3/5 lg:w-full lg:text-left">{text}</p>
 
       {/* LIST TECH STACK */}
       <ListText textLists={techstacks} />
