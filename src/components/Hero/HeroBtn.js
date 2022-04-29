@@ -8,7 +8,7 @@ const HeroBtn = () => {
       <Button
         text="Resume"
         className="btn-dark md:w-32 lg:w-52"
-        href="https://drive.google.com/file/d/1wB0s1jC0PID8ZTTQ6sFAW9ytZa9QO0OL/view?usp=sharing"
+        href="https://drive.google.com/file/d/1lH6BUMoKbcGCNjUvw8-KO_MfcVa7eNyr/view?usp=sharing"
       />
     </div>
   );
