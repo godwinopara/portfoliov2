@@ -4,7 +4,7 @@ import ProjectDetails from "./ProjectDetails";
 
 const Portfolio = () => {
   return (
-    <section className="xl:px-32 pt-32 min-h-screen bg-white" id="projects">
+    <section className="xl:px-32 py-32 min-h-screen bg-zinc-900" id="projects">
       <div className="xl:px-8">
         <ProjectDetails
           heading="Designo"

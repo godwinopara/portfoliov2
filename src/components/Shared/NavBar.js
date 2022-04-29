@@ -30,12 +30,15 @@ const NavBar = () => {
         className={`
         ${navIsOpen ? "block" : "hidden"} 
         fixed top-0 left-0 h-60 w-full bg-zinc-900 flex items-center justify-center flex-col
+        md:static md:right-0 md:bg-transparent md:h-full md:w-2/5 md:flex-row md:flex md:justify-between
         `}
       >
         <Li text="ABOUT" link="#about" onClick={handleClick} onKeyPress={handleClick} />
         <Li text="PROJECTS" link="#projects" onClick={handleClick} onKeyPress={handleClick} />
         <Li text="CONTACT" link="#contact" onClick={handleClick} onKeyPress={handleClick} />
       </ul>
+
+      {/* HAMBURGER MENU */}
       <div
         onClick={handleClick}
         onKeyPress={handleClick}
@@ -55,7 +58,7 @@ export default NavBar;
 const Li = ({ text, className, link, onClick, onKeyPress }) => {
   return (
     <li
-      className={`text-white text-md mb-5 md:text-zinc-600 md:mb-0 md:ml-8 md:text-xs ${className}`}
+      className={`text-white text-md mb-5 hover:text-light-blue-1 md:text-zinc-600 md:mb-0 md:ml-8 md:text-xs ${className}`}
     >
       <Link onClick={onClick} onKeyPress={onKeyPress} role="button" to={link}>
         {text}
