@@ -10,7 +10,7 @@ const Contact = () => {
       className=" py-20 px-4 bg-zinc-900 lg:grid lg:grid-cols-2 lg:px-10 xl:px-32"
       id="contact"
     >
-      <div className="mb-20 grid place-items-center">
+      <div className="mb-20 grid place-items-center md:w-4/5 md:ml-auto md:mr-auto lg:w-full lg:place-items-start">
         <ContactHeading />
         <ContactDescription />
         <Social />

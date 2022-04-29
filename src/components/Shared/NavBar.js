@@ -1,27 +1,65 @@
-import { Link } from "gatsby";
 import * as React from "react";
+import { useState, useEffect } from "react";
+import { Link } from "gatsby";
+import HamburgerIcon from "../../images/icon-hamburger.svg";
+import HamburgerClose from "../../images/icon-close.svg";
 
 const NavBar = () => {
+  const [navIsOpen, setNavIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (navIsOpen) {
+      document.documentElement.style.overflowX = "hidden";
+    }
+
+    return () => {
+      document.documentElement.style.overflowX = "scroll";
+    };
+  }, [navIsOpen]);
+
+  const handleClick = () => {
+    setNavIsOpen(!navIsOpen);
+  };
+
   return (
-    <nav className="lg:flex lg:justify-between">
+    <nav className="flex justify-between items-center">
       <a className="font-bold tracking-widest text-zinc-700" href="/">
         GODWIN
       </a>
-      <ul className="hidden xl:flex">
-        <Li text="ABOUT" link="#about" />
-        <Li text="PROJECTS" link="#projects" />
-        <Li text="CONTACT" link="#contact" />
+      <ul
+        className={`
+        ${navIsOpen ? "block" : "hidden"} 
+        fixed top-0 left-0 h-60 w-full bg-zinc-900 flex items-center justify-center flex-col
+        `}
+      >
+        <Li text="ABOUT" link="#about" onClick={handleClick} onKeyPress={handleClick} />
+        <Li text="PROJECTS" link="#projects" onClick={handleClick} onKeyPress={handleClick} />
+        <Li text="CONTACT" link="#contact" onClick={handleClick} onKeyPress={handleClick} />
       </ul>
+      <div
+        onClick={handleClick}
+        onKeyPress={handleClick}
+        role="button"
+        tabIndex={0}
+        className="md:hidden z-10"
+      >
+        {!navIsOpen && <img src={HamburgerIcon} alt="hamburger menu" />}
+        {navIsOpen && <img src={HamburgerClose} alt="hamburger menu" className="z-20" />}
+      </div>
     </nav>
   );
 };
 
 export default NavBar;
 
-const Li = ({ text, className, link }) => {
+const Li = ({ text, className, link, onClick, onKeyPress }) => {
   return (
-    <li className={`text-zinc-600 ml-8 text-sm ${className}`}>
-      <Link to={link}>{text}</Link>
+    <li
+      className={`text-white text-md mb-5 md:text-zinc-600 md:mb-0 md:ml-8 md:text-xs ${className}`}
+    >
+      <Link onClick={onClick} onKeyPress={onKeyPress} role="button" to={link}>
+        {text}
+      </Link>
     </li>
   );
 };
