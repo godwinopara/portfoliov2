@@ -9,11 +9,11 @@ const NavBar = () => {
 
   useEffect(() => {
     if (navIsOpen) {
-      document.documentElement.style.overflowX = "hidden";
+      document.documentElement.style.overflowY = "hidden";
     }
 
     return () => {
-      document.documentElement.style.overflowX = "scroll";
+      document.documentElement.style.overflowY = "scroll";
     };
   }, [navIsOpen]);
 

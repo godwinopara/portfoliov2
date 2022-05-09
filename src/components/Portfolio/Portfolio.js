@@ -12,7 +12,7 @@ const Portfolio = () => {
           image={
             <StaticImage src="../../images/fuji.jpg" alt="" height={400} className="rounded-lg" />
           }
-          techstacks={["React", "Gatsby", "MDX markdown", "Styled Components"]}
+          techstacks={["React", "Gatsby", "Markdown", "Styled Components"]}
           demoLink="https://designo-site.netlify.app/"
           githubLink="https://github.com/godwinopara/designo-site"
         />
