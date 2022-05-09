@@ -26,11 +26,16 @@ const NavBar = () => {
       <a className="font-bold tracking-widest text-zinc-700" href="/">
         GODWIN
       </a>
+      <ul className="hidden md:flex md:justify-between">
+        <Li text="ABOUT" link="#about" />
+        <Li text="PROJECTS" link="#projects" />
+        <Li text="CONTACT" link="#contact" />
+      </ul>
       <ul
         className={`
         ${navIsOpen ? "block" : "hidden"} 
         fixed top-0 left-0 h-60 w-full bg-zinc-900 flex items-center justify-center flex-col
-        md:static md:right-0 md:bg-transparent md:h-full md:w-2/5 md:flex-row md:flex md:justify-between
+        md:hidden
         `}
       >
         <Li text="ABOUT" link="#about" onClick={handleClick} onKeyPress={handleClick} />

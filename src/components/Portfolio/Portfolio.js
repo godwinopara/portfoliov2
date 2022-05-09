@@ -5,7 +5,10 @@ import ProjectDetails from "./ProjectDetails";
 const Portfolio = () => {
   return (
     <section className="xl:px-32 py-32 min-h-screen bg-zinc-900" id="projects">
-      <div className="xl:px-8">
+      <h2 className="font-bold text-light-blue-1 mb-12 text-center text-3xl px-2 lg:text-left xl:text-4xl">
+        Some Things i'v Built
+      </h2>
+      <div>
         <ProjectDetails
           heading="Designo"
           text="This project required me to build a 7 pages website to the design provided"
@@ -27,6 +30,7 @@ const Portfolio = () => {
           techstacks={["React", "Formik", "Yup", "TailwindCSS"]}
           demoLink="https://audiophile-e-commerce.netlify.app/"
           githubLink="https://github.com/godwinopara/audiophille-ecommerce"
+          className="lg:flex-row-reverse"
         />
         <ProjectDetails
           heading="Dev Finder"
@@ -49,6 +53,7 @@ const Portfolio = () => {
           techstacks={["React", "Sass"]}
           demoLink="https://starbuck-clone.netlify.app/"
           githubLink="https://github.com/godwinopara/starbuck-clone"
+          className="lg:flex-row-reverse"
         />
       </div>
     </section>
