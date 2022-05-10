@@ -6,7 +6,7 @@ const ProjectDetails = (props) => {
   return (
     <div
       className={`
-      flex flex-col-reverse items-center py-8 px-2 mb-28 shadow-sm shadow-light-blue-2 
+      flex flex-col-reverse items-center py-8 px-2 mb-28 last:mb-0 shadow-sm shadow-light-blue-2 
       lg:flex-row lg:justify-between lg:rounded-xl  lg:p-10  xl:px-8   bg-zinc-900 ${className}`}
     >
       {/* PROJECT DESCRIPTION */}

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer
       className="
-    bg-light-blue-2 text-zinc-900 text-center grid place-items-center
+    bg-light-blue-2 text-zinc-900 text-center grid place-items-center py-10
     lg:flex lg:justify-between lg:items-center lg:px-10 xl:px-32"
     >
       <div className="mb-3 tracking-wider lg:mb-0">

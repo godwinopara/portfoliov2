@@ -4,7 +4,7 @@ import ProjectDetails from "./ProjectDetails";
 
 const Portfolio = () => {
   return (
-    <section className="xl:px-32 py-20 min-h-screen bg-zinc-900" id="projects">
+    <section className="xl:px-32 py-32  min-h-screen bg-zinc-900" id="projects">
       <h2 className="font-bold text-light-blue-1 mb-12 text-center text-3xl px-2 lg:text-left xl:text-4xl">
         Some Things i'v Built
       </h2>
@@ -26,7 +26,6 @@ const Portfolio = () => {
           image={
             <StaticImage src="../../images/lamp.jpg" alt="" height={400} className="rounded-lg" />
           }
-          className="flex-row-reverse"
           techstacks={["React", "Formik", "Yup", "TailwindCSS"]}
           demoLink="https://audiophile-e-commerce.netlify.app/"
           githubLink="https://github.com/godwinopara/audiophille-ecommerce"
@@ -49,7 +48,6 @@ const Portfolio = () => {
           image={
             <StaticImage src="../../images/lamp.jpg" alt="" height={400} className="rounded-lg" />
           }
-          className="flex-row-reverse"
           techstacks={["React", "Sass"]}
           demoLink="https://starbuck-clone.netlify.app/"
           githubLink="https://github.com/godwinopara/starbuck-clone"
