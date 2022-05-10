@@ -17,6 +17,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/android-chrome-512x512.png",
+      },
+    },
   ],
 };
 
