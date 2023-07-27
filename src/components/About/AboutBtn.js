@@ -7,7 +7,7 @@ const AboutBtn = () => {
       <Button text="Contact Me" href="#contact" />
       <Button
         text="Resume"
-        href="https://drive.google.com/file/d/1lH6BUMoKbcGCNjUvw8-KO_MfcVa7eNyr/view?usp=sharing"
+        href="https://drive.google.com/file/d/1s-_OPaV1oPgMkPlL3OOujJFi11aTvHGm/view?usp=sharing"
       />
     </div>
   );
